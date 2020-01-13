@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
+
+html, body{
+    padding: 0 10px;
+    margin: 0;
+    background-color: #F9FEFF;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.login-container{
+    max-width: 450px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 30vh;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.notifier{
+    max-width: 450px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ff342c;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: white;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10vh;
+    min-height: 60px;
+    transition: .3s ease;
+    padding-right: 30px;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.notifier .close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.login-container .heading{
+    font-size: 20px;
+    color: #595959;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.login-form{
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px #ededed;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.login-form .form-group{
+    margin-bottom: 20px;
+}
+
+.login-form .form-group:last-child{
+    margin-bottom: 0;
+}
+
+.login-form .form-group .label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    border: 1.5px solid #ececec;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.btn-login{
+    background-color: #2EB3BD;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+}
+
+
+
+.text-link, a{
+    color: #2595a9 !important;
+}
+
+.loading {
+    margin-left: 5px;
+    animation: rotate infinite 1.5s linear;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+button .loading {
+    display: none;
+}
+
+.load .loading {
+    display: block !important;
+}
